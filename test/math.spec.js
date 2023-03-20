@@ -2,8 +2,10 @@ const assert = require('assert');
 const Math = require('../src/math');
 const expect = require('chai').expect;
 
+// Note: Só funciona com um único describe sendo chamado
+
 // Teste para funções normais
-/*describe('Math class', function () {
+describe('Math class', function () {
     it('Sum two numbers', function () {
         const math = new Math();
 
@@ -13,10 +15,10 @@ const expect = require('chai').expect;
             console.log(e)
         }
     })
-})*/
+})
 
 // Teste para funções com assincronismo - utiliza-se o done, que executa após terminar o tempo
-/*let value = 0;
+let value = 0;
 
 describe('Math class', function () {
     // Hooks (before, beforeEach, after, afterEach)
@@ -44,7 +46,7 @@ describe('Math class', function () {
 
         assert.equal(math.multiply(value, 5), 25);
     })
-})*/
+})
 
 // Usando o CHAI como ferramenta de asserting no lugar do assert
 describe('Math class', function () {
