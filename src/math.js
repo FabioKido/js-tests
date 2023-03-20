@@ -1,5 +1,5 @@
 // Testes, TDD e BDD
-// Testes com o Mocha
+// Testes com o Mocha - Chai - Sinon
 
 //Class Math
 class Math {
@@ -9,6 +9,10 @@ class Math {
 
     multiply(a, b) {
         return a * b
+    }
+
+    printSum(req, res, a, b) {
+        res.load('index', a + b);
     }
 }
 
